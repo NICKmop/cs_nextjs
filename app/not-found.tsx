@@ -1,19 +1,13 @@
 export const metadata = {
-    title : "not found your page!!!"
-}
+    title: "NOT FOUND"
+  }
 
-
-
+// not found on project page or URL 
 export default function NotFound() {
-    return(
+    return (
         <div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <h1>NOT FOUND</h1>
+            {/* <Navigation /> */}
         </div>
-    );
+    )
 }
