@@ -1,0 +1,28 @@
+.header {
+    z-index: 10;
+    position: absolute;
+    height: 10%; 
+    width: 100%;
+    top: 35px;
+    align-content: center;
+  
+    & ul { 
+        width: 20%;
+        height: 60%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 2.5em; 
+        position: relative; 
+        margin: auto;
+        border-radius: 5em;
+        background-color: #7e7c7c;
+        opacity: 50%;
+        transition: ease-in 0.8s;
+  
+        & a { color: #fff; font-weight: bolder; }
+    }
+    & ul:hover { opacity: 100%;}
+
+    & :link { color: #fff; text-decoration: none; }
+  }

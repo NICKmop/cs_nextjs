@@ -3,15 +3,82 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
 
-    & .header { height: 10%; width: 100%;}
-    & .content { height: 90%; width: 100%; border: 1px solid #fff; }
-    & .footer { height: 10%; width: 100%; border: 1px solid #fff; background-color: #000; }
+    & .content { height: 90%; width: 100%; }
+    & .footer { height: 10%; width: 100%;  }
 }
-.header {
 
-    & ul { width: 50%; height: 100%; display: flex; float: right; justify-content: space-around; line-height: 1em; align-items: center; }
-    & :link { color: #fff; text-decoration: none; }
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 4em;
+
+    & .infoCard { 
+        width: 65%; 
+        height: 80%; 
+        background-color: #fff;
+        box-shadow: 0px 0px 6px 10px #c5bbbb;
+        border-radius: 10px;
+        display: flex;
+
+        & .photo { 
+            height: 100%; 
+            width: 30%; 
+            box-shadow: 6px 0px 10px 2px #000; 
+
+            & div:nth-child(1) { height: 35%; padding: 20px; }
+            & div:nth-child(3) { height: 65%; padding: 20px; box-shadow: inset 0px 0px 30px 15px #ccc;}
+        }
+
+        & .contact {
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            width: 70%;
+            position: relative;
+            top: calc(100% - 95%);
+
+            & .contact_info { 
+                width: 30%;
+                position: relative;
+                top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                & div {
+                    line-height: 2em;
+                }
+            }
+            & .contact_message { 
+                /* height: 100%;  */
+                width: 50%;
+                position: relative;
+                top: 40px;
+                
+                & form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5em;
+
+                    & div > input { height: 25px; }
+                    & div:nth-child(5) > input { height: 100px; }
+
+                    & button { width: 25%; height: 50px; border-radius: 10px; transition: ease-in-out 0.5s; background-color: #000; color: #fff;}
+                    & button:hover ,
+                    & button:active { background-color: #ccc; color: #000; font-size: 25px; font-weight: bolder;}
+                }
+
+                & div {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
 }
-.content {}
 .footer {}
