@@ -16,12 +16,9 @@ export default function Slider() {
                 img: string;
                 link: string;
             } = {
-                num: 0,
-                topic: '',
-                description: '',
-                img: '',
-                link: ''
+                num: 0, topic: '', description: '', img: '', link: ''
             };
+
             if(globalThis?.sessionStorage.getItem('currentPath') == _SUBJECT[i].link){
                 // console.log(_SUBJECT[i]);
                 temp = _SUBJECT[0];
@@ -30,9 +27,7 @@ export default function Slider() {
             }
         }
         
-    } catch (error) {
-        
-    }
+    } catch (err){}
     return (
         <ul id='slider' className={styles.slider}>
             {_SUBJECT.map((item, index) => 

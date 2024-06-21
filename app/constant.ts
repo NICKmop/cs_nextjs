@@ -7,7 +7,13 @@ const KEEPGOING_IMG = "/img/keep-going.jpg";
 const FEAR_IMG = "/img/fear.jpg";
 
 const _SUBJECT = [
-    { num: 1, topic: "Home", description:"subject_1 on me", img:`url('${SPRING_IMG}')`, link: '/'},
+    { 
+        num: 1,
+        topic: "Home",
+        description:"subject_1 on me",
+        img:`url('${SPRING_IMG}')`,
+        link: '/'
+    },
     { num: 2, topic: "Stack",     description:"subject_2 on me", img:`url('${SUMMER_IMG}')`, link: '/stack'},
     { num: 3, topic: "Write", description:"subject_3 will be", img:`url('${FALL_IMG}')`, link: '/write'},
     { num: 4, topic: "About Me", description:"let me introduce my self if you interested me CLICK", img:`url('${WINTER_IMG}')`, link: '/about'}

@@ -1,26 +1,31 @@
 .header {
     z-index: 10;
     position: absolute;
-    height: 10%; 
+    height: 100%; 
     width: 100%;
     top: 35px;
     align-content: center;
   
     & ul { 
-        width: 20%;
-        height: 60%; 
+        /* width: 10%; */
+        height: 100%; 
         display: flex; 
-        justify-content: center; 
-        align-items: center; 
+        flex-direction: column;
         gap: 2.5em; 
         position: relative; 
-        margin: auto;
+        /* margin: auto; */
+        float: right;
         border-radius: 5em;
-        background-color: #7e7c7c;
-        opacity: 50%;
+        /* background-color: #7e7c7c; */
+        /* opacity: 50%; */
         transition: ease-in 0.8s;
-  
-        & a { color: #fff; font-weight: bolder; }
+        & > div {
+            box-shadow: 6px 6px 5px -2px #ccc;
+        }
+
+        & a { 
+            color: #fff; font-weight: bolder; 
+        }
     }
     & ul:hover { opacity: 100%;}
 

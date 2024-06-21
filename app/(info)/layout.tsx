@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import './global.css';
+import Header from "@/components/header";
+
+import styles from './layout.module.css';
+import '@/components/style/header.module.css'
 
 // () -> 그룹 지정
 // metadata 명칭 고정
@@ -18,10 +21,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="ko">
-      <body>
-        {children}
-      </body>
-    </html>
+    <div className={styles.container}>
+      <Header />
+      {children}
+    </div>
   );
 }
